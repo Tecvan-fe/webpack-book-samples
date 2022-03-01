@@ -1,0 +1,43 @@
+{
+  "cSpell.enableFiletypes": ["vue"],
+  "stylelint.enable": true,
+  "stylelint.validate": [
+    "less",
+    "postcss",
+    "sass",
+    "scss",
+    "vue",
+    "vue-html",
+    "vue-postcss"
+  ],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "editor.defaultFormatter": true
+  },
+  "editor.formatOnSave": true,
+  "eslint.nodePath": "./node_modules",
+  "eslint.probe": ["javascript", "vue"],
+  "eslint.run": "onType",
+  "eslint.validate": ["javascript", "vue"],
+  "search.exclude": {
+    "**/.git": true,
+    "**/*.log": true,
+    "**/*.pid": true,
+    "**/build": true,
+    "**/node_modules": true,
+    "**/output": true,
+    "**/package-lock.json": true,
+    "**/dist": true,
+    "**/yarn.lock": true
+  },
+  "prettier.disableLanguages": ["javascript", "typescript"]
+}

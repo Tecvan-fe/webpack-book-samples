@@ -1,0 +1,29 @@
+{
+  "name": "5-1_use-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.6.0",
+    "html-webpack-plugin": "^5.5.0",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.6",
+    "vue-loader": "^15.9.8",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.3"
+  },
+  "dependencies": {
+    "typescript": "^4.5.5",
+    "vue": "^2.6.14"
+  }
+}

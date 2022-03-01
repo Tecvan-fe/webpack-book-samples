@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "eslint": "^8.8.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.25.4"
+  }, 
+  "standard": {
+    "ignore": [
+      "**/node_modules/**"
+    ]
+  }
+}

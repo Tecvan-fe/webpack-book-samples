@@ -1,0 +1,22 @@
+{
+  "name": "6-1_test-lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "module": "src/index.js",
+  "scripts": {
+    "prepublishOnly": "webpack --mode=production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.6.0",
+    "mini-css-extract-plugin": "^2.5.3",
+    "webpack": "^5.69.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "peerDependencies": {
+    "lodash": "^4.17.21"
+  }
+}

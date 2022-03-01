@@ -1,0 +1,7 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "moduleResolution": "node"
+  }
+}
