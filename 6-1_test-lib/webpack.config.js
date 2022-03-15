@@ -1,5 +1,6 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const nodeExternals = require("webpack-node-externals");
 
 module.exports = {
   mode: "development",
@@ -13,14 +14,7 @@ module.exports = {
       type: "umd",
     },
   },
-  externals: {
-    lodash: {
-      commonjs: "lodash",
-      commonjs2: "lodash",
-      amd: "lodash",
-      root: "_",
-    },
-  },
+  externals: [nodeExternals()],
   module: {
     rules: [
       {

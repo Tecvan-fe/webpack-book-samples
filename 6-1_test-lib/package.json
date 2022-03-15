@@ -14,9 +14,13 @@
     "css-loader": "^6.6.0",
     "mini-css-extract-plugin": "^2.5.3",
     "webpack": "^5.69.1",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.9.2",
+    "webpack-node-externals": "^3.0.0"
   },
   "peerDependencies": {
+    "lodash": "^4.17.21"
+  },
+  "dependencies": {
     "lodash": "^4.17.21"
   }
 }
