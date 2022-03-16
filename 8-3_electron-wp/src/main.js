@@ -1,0 +1,52 @@
+const { app, BrowserWindow, ipcMain } = require("electron");
+const path = require("path");
+
+function createWindow() {
+  // 更多参数：https://www.electronjs.org/zh/docs/latest/api/browser-window
+  const win = new BrowserWindow({
+    width: 800,
+    height: 600,
+    devTools: true,
+    webPreferences: {
+      nodeIntegration: true,
+      enableRemoteModule: true,
+      contextIsolation: false,
+    },
+  });
+  win.on("show", () => {
+    win.webContents.openDevTools();
+  });
+
+  // if (process.env.NODE_ENV === "development" && false) {
+  //   win.loadURL("http://localhost:8080/home");
+  // } else {
+  //   console.log(
+  //     app.getAppPath(),
+  //     __dirname,
+  //     "file://" + path.join(app.getAppPath(), "home.html")
+  //   );
+  //   win.loadURL("file://" + path.join(app.getAppPath(), "home.html"));
+  // }
+  // win.loadFile("home.html");
+  win.loadURL("http://localhost:8080/home");
+}
+
+ipcMain.on("win:click", () => {
+  console.log("test");
+});
+
+app.whenReady().then(() => {
+  createWindow();
+
+  app.on("activate", () => {
+    if (BrowserWindow.getAllWindows().length === 0) {
+      createWindow();
+    }
+  });
+});
+
+app.on("window-all-closed", () => {
+  if (process.platform !== "darwin") {
+    app.quit();
+  }
+});
