@@ -11,7 +11,7 @@ const App = () => (
   <React.StrictMode>
     <HashRouter>
       <div>
-        <h1>App 1</h1>
+        <h1>Micro Frontend Example</h1>
         <Navigation />
         <Routes>
           {routes.map((route) => (
