@@ -1,0 +1,24 @@
+{
+  "name": "mf-micro-fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "clean": "lerna clean --yes",
+    "setup": "yarn",
+    "start": "lerna run --parallel start",
+    "build": "lerna run --scope packages/* --parallel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "workspaces": {
+    "packages": [
+      "./packages/*"
+    ]
+  }
+}
