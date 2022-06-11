@@ -1,5 +1,4 @@
-// import bar from "./bar";
-import("./bar").then(console.log);
+import bar from "./bar";
 
 console.log(bar);
 console.log("foo");

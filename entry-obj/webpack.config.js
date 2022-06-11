@@ -5,7 +5,7 @@ module.exports = {
   devtool: false,
   entry: {
     main: "./src/index.js",
-    foo: { import: ["./src/foo.js"], dependOn: "main" },
+    foo: { import: "./src/foo.js", dependOn: "main" },
   },
   output: {
     clean: true,
