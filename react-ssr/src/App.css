@@ -1,0 +1,13 @@
+h3 {
+  color: #42b983;
+}
+.main {
+  padding: 20px 12px;
+  transition: background 0.3s linear;
+}
+.activate {
+  background: #000;
+}
+.deactivate {
+  background: #fff;
+}
