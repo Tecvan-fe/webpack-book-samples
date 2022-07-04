@@ -20,7 +20,7 @@ function createWindow() {
   if (process.env.NODE_ENV === "development") {
     win.loadURL("http://localhost:8080/home");
   } else {
-    win.loadURL("file://" + path.join(app.getAppPath(), "home.html"));
+    win.loadFile(path.join(app.getAppPath(), "home.html"));
   }
 }
 
