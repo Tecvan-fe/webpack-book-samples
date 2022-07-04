@@ -6,7 +6,7 @@ const root = document.createElement("div");
 
 ReactDOM.render(
   <>
-    <h1>Hello22, world!</h1>
+    <h1>Hello, world!</h1>
     <App />
   </>,
   root

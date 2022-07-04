@@ -17,18 +17,18 @@ function createWindow() {
     win.webContents.openDevTools();
   });
 
-  // if (process.env.NODE_ENV === "development" && false) {
-  //   win.loadURL("http://localhost:8080/home");
-  // } else {
-  //   console.log(
-  //     app.getAppPath(),
-  //     __dirname,
-  //     "file://" + path.join(app.getAppPath(), "home.html")
-  //   );
-  //   win.loadURL("file://" + path.join(app.getAppPath(), "home.html"));
-  // }
+  if (process.env.NODE_ENV === "development") {
+    win.loadURL("http://localhost:8080/home");
+  } else {
+    console.log(
+      app.getAppPath(),
+      __dirname,
+      "file://" + path.join(app.getAppPath(), "home.html")
+    );
+    win.loadURL("file://" + path.join(app.getAppPath(), "home.html"));
+  }
   // win.loadFile("home.html");
-  win.loadURL("http://localhost:8080/home");
+  // win.loadURL("http://localhost:8080/home");
 }
 
 ipcMain.on("win:click", () => {
