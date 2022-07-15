@@ -1,0 +1,21 @@
+h1::before,
+h1:before {
+  /* 下面各种备注都可以删除 */
+  /* margin 值可简写 */
+  margin: 10px 20px 10px 20px;
+  /* 颜色值也可以简写 */
+  color: #ff0000;
+  /* 删除重复属性 */
+  font-weight: 400;
+  font-weight: 400;
+  /* position 字面量值可简化为百分比 */
+  background-position: bottom right;
+  /* 渐变参数可精简 */
+  background: linear-gradient(to bottom,
+      #ffe500 0%,
+      #ffe500 50%,
+      #121 50%,
+      #121 100%);
+  /* 初始值也可精简 */
+  min-width: initial;
+}
