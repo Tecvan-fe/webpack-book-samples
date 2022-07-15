@@ -24,7 +24,7 @@ module.exports = {
     minimizer: [
       // Webpack5 之后，约定使用 `'...'` 字面量保留默认 `minimizer` 配置
       "...",
-      // new CssMinimizerPlugin(),
+      new CssMinimizerPlugin(),
     ],
   },
   // 需要使用 `mini-css-extract-plugin` 将 CSS 代码抽取为单独文件
