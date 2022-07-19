@@ -16,12 +16,10 @@ module.exports = {
   },
   module: {
     rules: [
-      { test: /\.pug$/, use: ["pug-plain-loader"] },
       { test: /\.vue$/, use: ["vue-loader"] },
-      { test: /\.ts$/, use: ["ts-loader"] },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader", "less-loader"],
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
