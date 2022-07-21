@@ -6,8 +6,9 @@ module.exports = {
   mode: "development",
   devtool: false,
   output: {
-    filename: "[name]-[fullhash].js",
+    filename: "[name]-[contenthash].js",
     path: path.resolve(__dirname, "dist"),
+    clean: true,
   },
   module: {
     rules: [
@@ -17,5 +18,5 @@ module.exports = {
       },
     ],
   },
-  plugins: [new MiniCssExtractPlugin({ filename: "[name]-[fullhash].css" })],
+  plugins: [new MiniCssExtractPlugin({ filename: "[name]-[contenthash].css" })],
 };
