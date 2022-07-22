@@ -1,4 +1,3 @@
-import bar from "./bar";
-import a from "lodash";
+import _ from "lodash";
 
-console.log(_.add(1, 2), bar, a);
+console.log(_.add(1, 2));
