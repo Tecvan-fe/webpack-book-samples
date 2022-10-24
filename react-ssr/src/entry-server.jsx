@@ -11,7 +11,7 @@ const server = express();
 
 server.get("/", (req, res) => {
 
-  const html = renderToString(<App/>);
+  const html = renderToString(<App />);
 
   const clientCss = clientManifest["client.css"];
   const clientBundle = clientManifest["client.js"];
@@ -37,5 +37,5 @@ server.get("/", (req, res) => {
 server.use(express.static("./dist"));
 
 server.listen(3000, () => {
-  console.log("ready");
+  console.log("running at http://localhost:3000/");
 });

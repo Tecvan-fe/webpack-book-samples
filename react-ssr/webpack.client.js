@@ -1,6 +1,5 @@
 const Merge = require("webpack-merge");
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
 const base = require("./webpack.base");
@@ -25,20 +24,6 @@ module.exports = Merge.merge(base, {
     // 自动生成 HTML 文件内容
     new MiniCssExtractPlugin({
       filename: 'index.[contenthash].css'
-    }),
-    new HtmlWebpackPlugin({
-      templateContent: `
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Webpack App</title>
-</head>
-<body>
-  <div id="app" />
-</body>
-</html>
-  `,
-    }),
+    })
   ],
 });
