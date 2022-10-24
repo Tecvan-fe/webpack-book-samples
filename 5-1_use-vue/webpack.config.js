@@ -18,7 +18,15 @@ module.exports = {
     rules: [
       { test: /\.pug$/, use: ["pug-plain-loader"] },
       { test: /\.vue$/, use: ["vue-loader"] },
-      { test: /\.ts$/, use: ["ts-loader"] },
+      {
+          test: /\.(ts|typescript)$/,
+          loader: 'ts-loader',
+          options: {
+            transpileOnly: true,
+            appendTsSuffixTo: [/\.vue$/]
+          },
+          exclude: /node_modules/
+      },
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader", "less-loader"],
