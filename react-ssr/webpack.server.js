@@ -1,6 +1,5 @@
 const Merge = require("webpack-merge");
 const path = require("path");
-const { WebpackManifestPlugin } = require("webpack-manifest-plugin");
 const base = require("./webpack.base");
 
 module.exports = Merge.merge(base, {
@@ -16,7 +15,7 @@ module.exports = Merge.merge(base, {
   },
   module: {
     rules: [{
-      test: /.css$/,
+      test: /\.css$/,
       loader: './loader/removeCssLoader'
     }]
   },
