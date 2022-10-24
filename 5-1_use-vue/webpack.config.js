@@ -25,7 +25,7 @@ module.exports = {
             transpileOnly: true,
             appendTsSuffixTo: [/\.vue$/]
           },
-          exclude: /mode_modules/
+          exclude: /node_modules/
       },
       {
         test: /\.css$/,
