@@ -10,7 +10,7 @@ module.exports = {
     extensions: [".vue", ".js"],
   },
   module: {
-    rules: [{ test: /.vue$/, use: "vue-loader" }],
+    rules: [{ test: /\.vue$/, use: "vue-loader" }],
   },
   plugins: [new VueLoaderPlugin()],
 };

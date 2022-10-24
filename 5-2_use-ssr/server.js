@@ -40,5 +40,5 @@ server.get("/", async (req, res) => {
 server.use(express.static("./dist"));
 
 server.listen(3000, () => {
-  console.log("ready");
+  console.log("running at http://localhost:3000/");
 });
